@@ -4,7 +4,7 @@
 
 
 #Robot cleaner Technical Test:
-#Author: Jeffer Dylan Melgarejo
+#Author: Jeffer Dylan Melgarejo Pineda
 
 This project is a backend technical test implemented in Java 17 using Spring Boot.
 
