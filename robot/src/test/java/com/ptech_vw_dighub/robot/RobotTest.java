@@ -2,6 +2,10 @@ package com.ptech_vw_dighub.robot;
 
 import org.junit.jupiter.api.Test;
 
+import com.ptech_vw_dighub.robot.domain.Direction;
+import com.ptech_vw_dighub.robot.domain.Position;
+import com.ptech_vw_dighub.robot.domain.Robot;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RobotTest {

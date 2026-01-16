@@ -1,4 +1,4 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.domain;
 
 public enum Direction {
     N, E, S, W;
