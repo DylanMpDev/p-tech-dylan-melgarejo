@@ -1,23 +1,33 @@
 name: Build and Test
 
 on:
-  pull_request:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: robot
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: "17"
+          cache: maven
+          cache-dependency-path: robot/pom.xml
 
-      - name: Build and test
-        run: ./mvnw test
+      - name: Make mvnw executable
+        run: chmod +x mvnw
+
+      - name: Build and run tests
+        run: ./mvnw -B clean test
