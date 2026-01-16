@@ -1,9 +1,4 @@
-
-
-
-
 # Robot Simulator – Technical Test (Java 17, Spring Boot, Maven)
-## Author: Jeffer Dylan Melgarejo Pineda
 
 This project is a simple **robot movement simulator** built as a technical test.
 The goal is to show clean code, basic testing, and a clear project structure using a **hexagonal (ports & adapters) style**.
@@ -57,30 +52,37 @@ MMRMMRMRRM
 
 ### Requirements
 
-* Java 17
+* Java 17 installed
 * Git
-* No Docker required (Docker support is disabled by default)
+* Docker is **not required** (it is disabled by default)
 
-### Run with input file (Windows PowerShell)
+### Run using the example input file (recommended)
 
-1. Create a file called `input.txt` in the project root (same level as `pom.xml`).
-2. Paste your input into the file.
+This is the easiest way to run the project and verify the expected behavior.
 
-Run:
+1. An example input file is already provided in:
 
-```powershell
-type input.txt | .\mvnw.cmd spring-boot:run
-```
+   examples/input.txt
+
+2. Open **Windows PowerShell** in the project root (same level as `pom.xml`).
+
+3. Run the following command:
+
+   type examples\input.txt | .\mvnw.cmd spring-boot:run
+
+You should see the final robot positions printed in the console.
 
 ### Run with manual input
 
-```powershell
-.\mvnw.cmd spring-boot:run
-```
+1. Start the application:
 
-Then paste the input and finish with:
+   .\mvnw.cmd spring-boot:run
 
-* `Ctrl + Z`
+2. Paste the input directly into the terminal.
+
+3. Finish the input with:
+
+* Press `Ctrl + Z`
 * Press `Enter`
 
 ---
@@ -178,7 +180,9 @@ Run tests with:
 
 ---
 
+## Author
 
+Dylan Melgarejo
 
 ---
 
