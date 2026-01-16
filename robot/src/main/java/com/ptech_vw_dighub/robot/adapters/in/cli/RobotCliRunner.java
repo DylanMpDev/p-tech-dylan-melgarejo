@@ -1,7 +1,11 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.adapters.in.cli;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import com.ptech_vw_dighub.robot.application.ParsedInput;
+import com.ptech_vw_dighub.robot.application.RobotSimulator;
+import com.ptech_vw_dighub.robot.application.SimulationResult;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

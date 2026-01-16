@@ -1,4 +1,4 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.domain;
 
 public record Position(int x, int y) {
     public Position north() { return new Position(x, y + 1); }

@@ -1,7 +1,13 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.application;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
+import com.ptech_vw_dighub.robot.domain.Grid;
+import com.ptech_vw_dighub.robot.domain.Position;
+import com.ptech_vw_dighub.robot.domain.Robot;
+//import com.ptech_vw_dighub.robot.domain.Direction;
 
 public class RobotSimulator {
 

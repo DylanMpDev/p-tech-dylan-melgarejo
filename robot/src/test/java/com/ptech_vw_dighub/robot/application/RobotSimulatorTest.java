@@ -1,6 +1,16 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.application;
 
 import org.junit.jupiter.api.Test;
+
+//import com.ptech_vw_dighub.robot.application.ParsedInput;
+//import com.ptech_vw_dighub.robot.application.RobotProgram;
+//import com.ptech_vw_dighub.robot.application.RobotSimulator;
+//import com.ptech_vw_dighub.robot.application.SimulationResult;
+
+import com.ptech_vw_dighub.robot.domain.Direction;
+import com.ptech_vw_dighub.robot.domain.Grid;
+import com.ptech_vw_dighub.robot.domain.Position;
+import com.ptech_vw_dighub.robot.domain.Robot;
 
 import java.util.List;
 

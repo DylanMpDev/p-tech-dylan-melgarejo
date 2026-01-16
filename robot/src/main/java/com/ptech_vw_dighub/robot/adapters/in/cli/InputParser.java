@@ -1,7 +1,17 @@
-package com.ptech_vw_dighub.robot;
+package com.ptech_vw_dighub.robot.adapters.in.cli;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ptech_vw_dighub.robot.application.ParsedInput;
+import com.ptech_vw_dighub.robot.application.RobotProgram;
+
+import com.ptech_vw_dighub.robot.adapters.in.cli.InputParser;
+
+import com.ptech_vw_dighub.robot.domain.Direction;
+import com.ptech_vw_dighub.robot.domain.Grid;
+import com.ptech_vw_dighub.robot.domain.Position;
+import com.ptech_vw_dighub.robot.domain.Robot;
 
 public class InputParser {
 
@@ -20,7 +30,7 @@ public class InputParser {
             String positionLine = lines.get(i).trim();
             if (positionLine.isBlank()) {
                 i++;
-                continue; // ignoramos líneas vacías si existen
+                continue; // ignore empty lines
             }
 
             if (i + 1 >= lines.size()) {
@@ -33,7 +43,7 @@ public class InputParser {
 
             robotPrograms.add(new RobotProgram(robot, instructionsLine));
 
-            i += 2; // avanzamos 2 líneas: posición + instrucciones
+            i += 2; // move two lines ahead + continue
         }
 
         return new ParsedInput(grid, robotPrograms);
